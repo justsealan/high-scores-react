@@ -3,11 +3,12 @@
 }
 
 body {
-  background-color: #282c34;
+  background-color: #b2beee;
   color: white;
   padding: 40px;
   text-align: center;
   font-family: "ARCADECLASSIC";
+  font-size: 1.6rem;
 }
 
 .container {
