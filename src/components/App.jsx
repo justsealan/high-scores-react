@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import './App.css';
+import "./App.css";
+import CountryScore from "./CountryScore";
 
 function App() {
   return (
-    <div className="font-face">
-      <h1>High Scores per Country</h1>
+    <div>
+      <CountryScore />
     </div>
   );
 }

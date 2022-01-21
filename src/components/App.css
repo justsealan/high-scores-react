@@ -1,5 +1,5 @@
-.font-face{
-    font-family: 'ARCADECLASSIC';
+.font-face {
+  font-family: "ARCADECLASSIC";
 }
 
 body {
@@ -7,8 +7,54 @@ body {
   color: white;
   padding: 40px;
   text-align: center;
-  font-family: 'ARCADECLASSIC';
-
+  font-family: "ARCADECLASSIC";
 }
 
-.
+.container {
+  margin: auto;
+  border-style: solid;
+  border-color: blue;
+  width: fit-content;
+  background-color: white;
+  color: blue;
+  padding: 1rem;
+}
+
+.country {
+ 
+  background-color: aqua;
+  color: rgb(14, 128, 221);
+  border-style: solid;
+  border-color: rgb(176, 243, 114);
+  border-width: 10px;
+  margin-bottom: 10px;
+}
+
+.country__header{
+    margin: 5px;
+}
+
+.list {
+  padding: 0 5px 5px 5px;
+  margin-top: 0;
+}
+
+.listItems {
+  list-style: none;
+  color: black;
+  border: solid;
+  border-color: rgb(0, 0, 0);
+  padding: 5px;
+  position: relative;
+}
+
+.listItems__names{
+    color: #282c34;
+    text-align: left;
+}
+
+.listItems__scores{
+    color:red;
+    position: absolute;
+    right: 0;
+}
