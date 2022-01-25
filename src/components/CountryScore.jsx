@@ -2,22 +2,26 @@ import React from "react";
 import allCountryScores from "../scores";
 import sortBy from "lodash/sortBy";
 
-function CountryScore() {
+function CountryScore(props) {
   // Sort by country name
-  const sortedCountry = sortBy(allCountryScores, "name");
+  //   const sortedCountry = sortBy(allCountryScores, "name");
 
   // Sort by indiviual personal scores
-  const sortedScores = sortedCountry.map((el) => {
-    el.scores.sort((a, b) => b.s - a.s);
-    return el;
-  });
+  //   const sortedScores = sortedCountry.map((el) => {
+  //     el.scores.sort((a, b) => b.s - a.s);
+  //     return el;
+  //   });
 
   return (
-    <div className="container">
-      <h1 className="container__header">High Scores per Country</h1>
-      {sortedScores.map((countryScore) => (
-        <div className="country">
-          <h2 className="country__header">High Scores : {countryScore.name}</h2>
+    <div>
+      <h2 className="country__header">High Scores : {props.country}</h2>
+      <ul className="list">
+        <li className="list__item">
+          <span className="list__item__name">{console.log(props.name)}</span>
+          <span className="list__item__score">{props.score}</span>
+        </li>
+      </ul>
+      {/* {sortedScores.map((countryScore) => (
           <ul className="list">
             {countryScore.scores.map((score) => (
               <li className="listItems">
@@ -26,8 +30,7 @@ function CountryScore() {
               </li>
             ))}
           </ul>
-        </div>
-      ))}
+      ))} */}
     </div>
   );
 }
